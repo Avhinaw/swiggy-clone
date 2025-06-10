@@ -1,7 +1,10 @@
 import React from 'react'
+import HomeHeader from './components/HomeHeader'
 
 export default function page() {
   return (
-    <div>Swiggy</div>
+    <div className='min-h-screen w-screen'>
+      <HomeHeader />
+    </div>
   )
 }
