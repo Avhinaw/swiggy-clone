@@ -4,7 +4,6 @@ import FoodOption from './components/FoodOption'
 import GroceryOption from './components/GroceryOption'
 import DineOut from './components/DineOut'
 import CitiesDelivery from './components/CitiesDelivery'
-
 export default function page() {
   return (
     <div className='min-h-screen w-screen'>
