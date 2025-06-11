@@ -1,5 +1,4 @@
-const imageItemType = {
-    info: [
+  const imageItemType = [
     {
         id: "6821bc9e09ab2e00019aa5d1",
         imageId:
@@ -258,6 +257,5 @@ const imageItemType = {
     },
   }
 ]
-}
 
 export default imageItemType;
