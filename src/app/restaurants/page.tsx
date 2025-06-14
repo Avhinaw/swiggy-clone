@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import LocationRestraunts from '../components/LocationRestraunts'
 import DishOption from '../components/DishOption';
+import SemmerEffect from '../components/layout/SemmerEffect';
 
 export default function page() {
   const [dishData, setDishData] = useState([]);
@@ -21,7 +22,10 @@ export default function page() {
       }
       fetchData();
   }, [])
-  console.log(restData);
+
+if(restData.length === 0 || dishData.length === 0) {
+  return <SemmerEffect />
+};
 
   return (
     <div className='min-h-screen w-screen'>
