@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 export default function HomeHeader() {
   return (
@@ -21,7 +22,9 @@ export default function HomeHeader() {
             </div>
         </div>
         <div className='flex items-center justify-center pt-2'>
-            <img className='h-[30%] w-[40%] object-cover' src="./food_service_card.png" alt="Food Delivery" />
+            <Link className='h-[30%] w-[40%] object-cover' href="/restaurants">
+            <img src="./food_service_card.png" alt="Food Delivery" />
+            </Link>
             <img className='h-[30%] w-[40%] object-cover' src="./dine_service_card.png" alt="Dine Out" />
         </div>
     </div>
